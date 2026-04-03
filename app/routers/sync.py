@@ -1,9 +1,8 @@
-
 from fastapi import APIRouter, Request
 from app.database import get_connection
 import requests
 
-WC_API_URL = "https://yourstore.com/wp-json/wc/v3"
+WC_API_URL = "http://localhost/wordpress/wp-json/wc/v3"
 WC_CONSUMER_KEY = "ck_..."
 WC_CONSUMER_SECRET = "cs_..."
 
@@ -441,4 +440,64 @@ def list_employees():
 
     return employees
 
+
+# -----------------------------
+# CUSTOMER SYNC (WooCommerce → Brikō)
+# -----------------------------
+@router.post("/customers/from-woocommerce")
+def sync_customers_from_woocommerce():
+
+    # 1. Fetch customers from WooCommerce
+    url = f"{WC_API_URL}/customers"
+    response = requests.get(url, auth=(WC_CONSUMER_KEY, WC_CONSUMER_SECRET))
+
+    if response.status_code not in (200, 201):
+        return {
+            "status": "error",
+            "error": response.text
+        }
+
+    customers = response.json()
+
+    conn = get_connection()
+    cursor = conn.cursor()
+
+    results = []
+
+    # 2. Insert/update each customer
+    for c in customers:
+        customer_id = c["id"]
+        first = c.get("first_name", "")
+        last = c.get("last_name", "")
+        email = c.get("email", "")
+        phone = c.get("billing", {}).get("phone", "")
+        address = c.get("billing", {}).get("address_1", "")
+        subscription = "None"  # WooCommerce doesn't track this
+
+        cursor.execute("""
+            INSERT INTO Customers (CustomerID, FirstName, LastName, Email, Phone, Address, SubscriptionStatus)
+            VALUES (%s, %s, %s, %s, %s, %s, %s)
+            ON DUPLICATE KEY UPDATE
+                FirstName = VALUES(FirstName),
+                LastName = VALUES(LastName),
+                Email = VALUES(Email),
+                Phone = VALUES(Phone),
+                Address = VALUES(Address)
+        """, (customer_id, first, last, email, phone, address, subscription))
+
+        results.append({
+            "customer_id": customer_id,
+            "name": f"{first} {last}",
+            "email": email,
+            "status": "updated"
+        })
+
+    conn.commit()
+    cursor.close()
+    conn.close()
+
+    return {
+        "status": "completed",
+        "updated_customers": results
+    }
 
