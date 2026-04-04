@@ -1,0 +1,12 @@
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2026-02-27 03:27:09
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+2026-02-27 03:27:09 ::1 GET / - 80 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/140.0.0.0+Safari/537.36+Edg/140.0.0.0 - 200 0 0 375
+2026-02-27 03:27:09 ::1 GET /iisstart.png - 80 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/140.0.0.0+Safari/537.36+Edg/140.0.0.0 http://localhost/ 200 0 0 13
+2026-02-27 03:27:09 ::1 GET /favicon.ico - 80 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/140.0.0.0+Safari/537.36+Edg/140.0.0.0 http://localhost/ 404 0 2 12
+2026-02-27 03:33:20 10.0.0.10 GET / - 80 - 192.168.50.2 Mozilla/5.0+(X11;+Linux+x86_64;+rv:128.0)+Gecko/20100101+Firefox/128.0 - 200 0 0 1
+2026-02-27 03:33:20 10.0.0.10 GET /iisstart.png - 80 - 192.168.50.2 Mozilla/5.0+(X11;+Linux+x86_64;+rv:128.0)+Gecko/20100101+Firefox/128.0 http://10.0.0.10/ 200 0 0 4
+2026-02-27 03:33:20 10.0.0.10 GET /favicon.ico - 80 - 192.168.50.2 Mozilla/5.0+(X11;+Linux+x86_64;+rv:128.0)+Gecko/20100101+Firefox/128.0 http://10.0.0.10/ 404 0 2 172
+2026-02-27 03:37:48 10.0.0.10 GET / - 80 - 192.168.50.2 Mozilla/5.0+(X11;+Linux+x86_64;+rv:128.0)+Gecko/20100101+Firefox/128.0 - 200 0 0 1
+2026-02-27 03:37:48 10.0.0.10 GET /iisstart.png - 80 - 192.168.50.2 Mozilla/5.0+(X11;+Linux+x86_64;+rv:128.0)+Gecko/20100101+Firefox/128.0 http://10.0.0.10/ 200 0 0 4

@@ -1,0 +1,37 @@
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2026-03-06 07:15:59
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2026-03-06 07:15:59 ::1 GET /info.php - 80 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/145.0.0.0+Safari/537.36+Edg/145.0.0.0 - 500 0 3221225781 5855 682 1155
+2026-03-06 07:15:59 ::1 GET /favicon.ico - 80 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/145.0.0.0+Safari/537.36+Edg/145.0.0.0 http://localhost/info.php 404 0 2 5042 603 3
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2026-03-06 08:10:46
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2026-03-06 08:10:46 ::1 GET /info.php - 80 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/145.0.0.0+Safari/537.36+Edg/145.0.0.0 - 500 0 3221225781 5855 708 133
+2026-03-06 08:10:49 ::1 GET /info.php - 80 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/145.0.0.0+Safari/537.36+Edg/145.0.0.0 - 500 0 3221225781 5855 708 55
+2026-03-06 08:11:01 ::1 GET /info.php - 80 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/145.0.0.0+Safari/537.36+Edg/145.0.0.0 - 500 0 3221225781 5855 682 42
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2026-03-06 08:13:51
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2026-03-06 08:13:51 ::1 GET /info.php - 80 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/145.0.0.0+Safari/537.36+Edg/145.0.0.0 - 500 0 3221225781 5855 708 137
+2026-03-06 08:13:51 ::1 GET /info.php - 80 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/145.0.0.0+Safari/537.36+Edg/145.0.0.0 - 500 0 3221225781 5855 708 51
+2026-03-06 08:13:53 ::1 GET /info.php - 80 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/145.0.0.0+Safari/537.36+Edg/145.0.0.0 - 500 0 3221225781 5855 708 46
+2026-03-06 08:14:18 ::1 GET /info.php - 80 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/145.0.0.0+Safari/537.36+Edg/145.0.0.0 - 500 0 3221225781 5855 682 45
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2026-03-06 08:16:34
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2026-03-06 08:16:34 ::1 GET /info.php - 80 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/145.0.0.0+Safari/537.36+Edg/145.0.0.0 - 500 0 3221225781 5855 682 2367
+2026-03-06 08:16:34 ::1 GET /favicon.ico - 80 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/145.0.0.0+Safari/537.36+Edg/145.0.0.0 http://localhost/info.php 404 0 2 5042 603 5
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2026-03-06 09:04:00
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2026-03-06 09:04:00 ::1 GET /info.php - 80 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/145.0.0.0+Safari/537.36+Edg/145.0.0.0 - 200 0 0 87902 708 486
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2026-03-06 23:45:43
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2026-03-06 23:45:43 ::1 GET /wordpress/wp-admin/install.php - 80 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/145.0.0.0+Safari/537.36+Edg/145.0.0.0 - 500 0 0 3442 704 4542
