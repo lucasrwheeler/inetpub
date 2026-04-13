@@ -1,6 +1,8 @@
 from fastapi import FastAPI
-from app.routers import products, inventory, customers, orders, employees, events, registrations
-from app.routers import products, inventory, customers, orders, employees, events, registrations, sync
+from app.routers import (
+    products, inventory, customers, orders, 
+    employees, events, registrations, sync
+)
 
 
 app = FastAPI(
@@ -18,8 +20,10 @@ app.include_router(events.router)
 app.include_router(registrations.router)
 app.include_router(sync.router)
 
-
 @app.get("/")
 def root():
-    return {"message": "Brikō API is running"}
-
+    return {
+        "status": "online", 
+        "message": "Brikō API is running", 
+        "version": "1.0.0"
+    }

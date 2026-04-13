@@ -7,5 +7,6 @@ def get_connection():
         user="wpuser",     # or your dedicated API user
         password="StrongPassword123!",
         database="briko",
-        cursorclass=pymysql.cursors.DictCursor
+        cursorclass=pymysql.cursors.DictCursor,
+	autocommit=True
     )
